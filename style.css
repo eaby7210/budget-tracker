@@ -1,0 +1,152 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.24) -1.5px 2px 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  list-style: none;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline solid rgb(81, 81, 81) 2px;
+  font-size: 24px;
+}
+.outer-wrap {
+  width: 100%;
+  min-height: 100vh;
+  background-color: bisque;
+  padding: 30px;
+}
+.inner-wrap {
+  max-width: 1200px;
+  margin: auto;
+}
+.heading {
+  margin: 10px auto 40px auto;
+}
+.heading .title {
+  font-size: 30px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+}
+.heading .subtitle {
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+  text-align: center;
+}
+.transaction-control {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 30px auto;
+}
+.actions,
+.stats {
+  flex-grow: 1;
+  background-color: rgb(249, 245, 245);
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+.actions .add {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.actions .add input {
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+}
+.actions .add input[type="submit"] {
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: darkcyan;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+.stats p {
+  margin: 15px;
+  padding: 10px 20px;
+  box-shadow: var(--box-shadow);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 2px;
+  text-align: center;
+}
+.stats p.balance {
+  border-right: 10px solid #191577;
+  background-color: #ab9bff;
+}
+.stats p.income {
+  border-right: 10px solid #187715;
+  background-color: #aaff9f;
+}
+.stats p.expense {
+  border-right: 10px solid #771515;
+  background-color: #ff9e9e;
+}
+.transaction-history {
+  margin: 40px 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 0px;
+  box-shadow: var(--box-shadow);
+}
+.record {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+.record div {
+  flex-grow: 1;
+  padding: 10px;
+}
+.record li {
+  display: flex;
+
+  background-color: rgb(255, 246, 233);
+  padding: 10px;
+  margin: 12px 0px;
+  min-width: 250px;
+}
+.record .income li {
+  border-left: 10px solid #187715;
+}
+
+.record .expense li {
+  border-left: 10px solid #771515;
+}
+.record li p:first-child {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.record span#time {
+  color: darkgray;
+  font-size: 12px;
+}
+.record i.delete {
+  margin-left: 15px;
+  color: #850101;
+  cursor: pointer;
+  font-size: 20px;
+}
+.record i.delete:hover {
+  color: #fc0000;
+}
